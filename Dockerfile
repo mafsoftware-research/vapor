@@ -48,7 +48,7 @@ ENV REPO_CLONE_URL ${REPO_CLONE_URL}
 RUN echo ${REPO_CLONE_URL}
 USER ${USERNAME}
 RUN git clone ${REPO_CLONE_URL}
-WORKDIR /vapor/ecs-swift-sample-app/example
+WORKDIR /vapor/Hello
 RUN swift build
 
 EXPOSE 8080
